@@ -1,0 +1,61 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 25vh;
+  background: #355e3b;
+}
+
+.nav_menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1.2rem;
+}
+
+.nav_toggler div {
+  width: 2.5rem;
+  height: 0.2em;
+  margin: 0.4rem;
+  background: silver;
+  transition: 0.4s ease-in;
+}
+
+.nav_toggler {
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav_toggler {
+    display: block;
+  }
+  .nav_menu {
+    position: fixed;
+
+    top: 7vh;
+    right: 0;
+    width: 50%;
+    height: 93vh;
+    background: #355e3b;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+  }
+}
+
+.nav_active {
+  transform: translateX(0);
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4px, -5px);
+}
