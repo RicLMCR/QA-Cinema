@@ -3,8 +3,12 @@ import NavBar from './components/NavBar';
 import "./App.css";
 import WhatsOn from "./components/WhatsOn";
 
+import { useState } from 'react';
+
 
 function App() {
+
+
   return (
     <div className="App">
      <header>
@@ -13,7 +17,6 @@ function App() {
      </header>
       
       <WhatsOn />
-
     </div>
   );
 }
