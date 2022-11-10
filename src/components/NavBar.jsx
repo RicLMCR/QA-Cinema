@@ -1,25 +1,21 @@
 import React, { useState } from "react";
-import NavBar from "./NavBar.css";
+// import "./NavBar.css";
 
 const NavBar = () => {
   return (
-    <div onClick={navToggle} className={toggleIcon}>
+    // <div onClick={navToggle} className={toggleIcon}>
+    <div>
       <nav>
-        <ul className={active}>
+        {/* <ul className={active}> */}
+        <ul>
           <li>
-            <a href src="/">
-              Link 1
-            </a>
+            <a src="/">Link 1</a>
           </li>
           <li>
-            <a href src="/">
-              Link 1
-            </a>
+            <a src="/">Link 1</a>
           </li>
           <li>
-            <a href src="/">
-              Link 1
-            </a>
+            <a src="/">Link 1</a>
           </li>
         </ul>
       </nav>
