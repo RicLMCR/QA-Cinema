@@ -3,6 +3,7 @@ import React, { useState } from "react";
 const NavBar = () => {
   return (
     <div>
+
       <ul>
         <li>
           <a href src="/">
@@ -20,6 +21,7 @@ const NavBar = () => {
           </a>
         </li>
       </ul>
+
     </div>
   );
 };
