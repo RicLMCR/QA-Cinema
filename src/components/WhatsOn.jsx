@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import FilmInfo from "./FilmInfo";
 
 const WhatsOn = () => {
@@ -28,11 +28,32 @@ const WhatsOn = () => {
     ],
   });
 
+  //Fetch to DB
+  const getFilms = async () => {
+    console.log("getting films");
+    try {
+      const response = await fetch("http://localhost:4000/", {
+        method: "GET",
+        headers: { "Content-Type": "application/json" },
+      });
+      const data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    console.log("useeffect running");
+    getFilms();
+  }, []);
+
   return (
     <div className="container whatsOnContainer">
       <div>
         <FilmInfo
           title={filmInformation.films[0].title}
+          agecert={filmInformation.films[0].agecert}
           synopsis={filmInformation.films[0].synopsis}
           showtime1={filmInformation.films[0].showtimes[0]}
           showtime2={filmInformation.films[0].showtimes[1]}
