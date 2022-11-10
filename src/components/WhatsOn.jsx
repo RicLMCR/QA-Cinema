@@ -9,15 +9,7 @@ const WhatsOn = () => {
        <div>
         <FilmInfo/>
        </div>
-       <div>
-        <FilmInfo/>
-       </div>
-       <div>
-        <FilmInfo/>
-       </div>
-       <div>
-        <FilmInfo/>
-       </div>
+
       
      
 
