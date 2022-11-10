@@ -1,10 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import WhatsOn from "./components/WhatsOn";
+
 
 function App() {
   return (
     <div className="App">
-     <h1>CLassic Cinema COmpany</h1>
+      <header>
+      <h1>Classic Cinema Company</h1>
+      </header>
+      
+      <WhatsOn />
+
     </div>
   );
 }
