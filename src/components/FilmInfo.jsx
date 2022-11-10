@@ -18,7 +18,7 @@ const FilmInfo = (props) => {
       <div className="filmInfoCol filmInfoCol2">
         <div className="filmInfoCol2Header">
           <h2>{props.title}</h2>
-          <img src="/" />
+          <h2>{props.agecert}</h2>
         </div>
         <div className="filmDescription">
           <p>
