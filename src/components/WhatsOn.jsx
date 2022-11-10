@@ -31,7 +31,13 @@ const WhatsOn = () => {
   return (
     <div className="container whatsOnContainer">
       <div>
-        <FilmInfo title={filmInformation.films[0].title} synopsis={filmInformation.films[0].synopsis}/>
+        <FilmInfo
+          title={filmInformation.films[0].title}
+          synopsis={filmInformation.films[0].synopsis}
+          showtime1={filmInformation.films[0].showtimes[0]}
+          showtime2={filmInformation.films[0].showtimes[1]}
+          showtime3={filmInformation.films[0].showtimes[2]}
+        />
       </div>
     </div>
   );

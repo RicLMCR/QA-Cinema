@@ -9,9 +9,9 @@ const FilmInfo = (props) => {
           <img src="/" />
         </div>
         <div className="filmInfoCol1Footer">
-          <h2>Times here</h2>
-          <h2>Times here</h2>
-          <h2>Times here</h2>
+          <h4>{props.showtime1}</h4>
+          <h4>{props.showtime2}</h4>
+          <h4>{props.showtime3}</h4>
         </div>
       </div>
 
