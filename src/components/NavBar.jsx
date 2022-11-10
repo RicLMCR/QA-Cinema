@@ -3,7 +3,25 @@ import React, { useState } from "react";
 const NavBar = () => {
   return (
     <div>
-      <h2>Navbar Here</h2>
+
+      <ul>
+        <li>
+          <a href src="/">
+            Link 1
+          </a>
+        </li>
+        <li>
+          <a href src="/">
+            Link 1
+          </a>
+        </li>
+        <li>
+          <a href src="/">
+            Link 1
+          </a>
+        </li>
+      </ul>
+
     </div>
   );
 };

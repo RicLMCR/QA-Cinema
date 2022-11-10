@@ -4,6 +4,7 @@ import FilmInfo from "./FilmInfo";
 const WhatsOn = () => {
   return (
     <div className="container whatsOnContainer">
+
        
        <div>
         <FilmInfo/>
@@ -19,6 +20,7 @@ const WhatsOn = () => {
        </div>
       
      
+
 
     </div>
   );

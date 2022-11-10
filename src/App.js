@@ -1,3 +1,5 @@
+
+import NavBar from './components/NavBar';
 import "./App.css";
 import WhatsOn from "./components/WhatsOn";
 
@@ -5,9 +7,10 @@ import WhatsOn from "./components/WhatsOn";
 function App() {
   return (
     <div className="App">
-      <header>
+     <header>
       <h1>Classic Cinema Company</h1>
-      </header>
+      <NavBar/>
+     </header>
       
       <WhatsOn />
 
